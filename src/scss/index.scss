@@ -1,0 +1,41 @@
+$TextFont: "Playfair Display", serif;
+$TitleFont: "Playfair Display", serif;
+$FontWeightNormal: 400;
+$FontWeightBold: 600;
+@import "./header.scss";
+@import "./mainPage.scss";
+@import "./viennaStyle.scss";
+@import "./foother.scss";
+@import "./aboutUs.scss";
+@import "./pageOne.scss";
+@import "./recomendation.scss";
+@import "./topic.scss";
+@import "./videoBlock.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%);
+}
+body > header {
+  color: white;
+}
+h2 {
+  color: white;
+}
+p {
+  color: white;
+}
+a {
+  color: white;
+}
+span {
+  color: white;
+}
+.footerWrap__linkHelp {
+  color: white;
+}

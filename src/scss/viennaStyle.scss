@@ -1,0 +1,61 @@
+.PeopleViennaBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4vw 12vw;
+  &__link {
+    border-bottom: 2px solid #fff;
+  }
+  &__imgText {
+    text-align: center;
+  }
+  &__title {
+    text-align: center;
+
+    &--Topic {
+      text-align: center;
+    }
+  }
+  &__itemWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+  }
+  &__text {
+    padding: 4vw 0;
+    text-align: start;
+  }
+  &__imgPhoto {
+    width: 600px;
+  }
+
+  &__imgText {
+    padding: 0 0 4vw 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .PeopleViennaBox {
+    padding: 8vw 6vw;
+    &__imgPhoto {
+      width: 300px;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__title {
+      padding: 4vw 0;
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .PeopleViennaBox {
+    padding: 8vw 12vw;
+    &__imgPhoto {
+      width: 280px;
+    }
+  }
+}

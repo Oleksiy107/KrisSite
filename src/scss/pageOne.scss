@@ -1,0 +1,35 @@
+.block-info-pageOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    font-size: 2vw;
+    padding: 1vw 0;
+    --c: linear-gradient(#000 0 0); /* update the color here */
+    color: #000;
+
+    background: var(--c), var(--c);
+    background-size: 0.3em 0.1em;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+
+    transition: 0.3s linear, background-size 0.3s 0.2s linear;
+  }
+  &__text {
+    padding: 1vw 0;
+    width: 50%;
+  }
+}
+.block-info-pageOne {
+  &__title:hover {
+    background-size: 100% 0.1em;
+    background-position: 10% 100%, 90% 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .block-info-pageOne {
+    &__title {
+      font-size: 3vw;
+    }
+  }
+}

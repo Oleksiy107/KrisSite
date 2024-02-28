@@ -1,0 +1,23 @@
+.video-block {
+  text-align: center;
+  padding: 8vw 0;
+  &__video {
+    width: 100%;
+  }
+  &__text {
+    padding: 1vw 6vw;
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .video-block {
+    font-size: 1vw;
+  }
+}
+@media screen and (max-width: 425px) {
+  .video-block {
+    &__text {
+      font-size: 4vw;
+    }
+  }
+}

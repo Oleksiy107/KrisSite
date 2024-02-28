@@ -1,0 +1,93 @@
+$colorWhiteLink: #fff;
+.footerWrap {
+  border-top: 1px solid $colorWhiteLink;
+  border-bottom: 1px solid black;
+  padding: 8vw;
+  display: flex;
+  gap: 4vw;
+  align-items: flex-start;
+  justify-content: center;
+  &__firstWrap {
+    display: flex;
+
+    flex-direction: column;
+  }
+  &__firstWrap {
+    &--correctStyle {
+      display: none;
+    }
+  }
+
+  &__titles {
+    font-size: 2vw;
+    padding: 2vw 0;
+  }
+  &__linkHelp {
+    font-size: 1.5vw;
+    color: #000;
+  }
+  &__imgMessage {
+    &--FacebookMessageImg {
+      width: 40px;
+    }
+    &--InstagramMessageImg {
+      width: 50px;
+    }
+    width: 60px;
+  }
+  &__sectionImg {
+    display: flex;
+    gap: 4vw;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__HelpBlock {
+    display: flex;
+
+    flex-direction: column-reverse;
+  }
+  &__messageLink {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 505px) {
+  .footerWrap {
+    padding: 8vw 4vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 6vw;
+    &__titles {
+      text-align: center;
+      font-size: 5vw;
+    }
+    &__linkHelp {
+      font-size: 4.5vw;
+    }
+    &__firstWrap {
+      align-items: center;
+    }
+    &__HelpBlock {
+      align-items: center;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__messageLink {
+      gap: 4vw;
+    }
+    &__sectionImg {
+      justify-content: center;
+    }
+    &__imgMessage {
+      &--FacebookMessageImg {
+        width: 35px;
+      }
+      &--InstagramMessageImg {
+        width: 45px;
+      }
+      width: 50px;
+    }
+  }
+}
