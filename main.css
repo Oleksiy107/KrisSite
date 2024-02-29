@@ -239,6 +239,9 @@
 .PeopleViennaBox__link {
   border-bottom: 2px solid #fff;
 }
+.PeopleViennaBox__imgPhoto {
+  width: 50%;
+}
 .PeopleViennaBox__imgText {
   text-align: center;
 }
@@ -261,9 +264,6 @@
 .PeopleViennaBox__text {
   padding: 2vw 0;
   text-align: start;
-}
-.PeopleViennaBox__imgPhoto {
-  width: 100%;
 }
 .PeopleViennaBox__imgText {
   padding: 0 0 4vw 0;
