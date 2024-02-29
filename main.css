@@ -67,7 +67,7 @@
 }
 
 .header-block {
-  border-bottom: 0.2vw solid black;
+  border-bottom: 0.2vw solid #fff;
 }
 
 .img-block__img {
@@ -243,7 +243,7 @@
   text-align: center;
 }
 .PeopleViennaBox__title {
-  text-align: center;
+  text-align: start;
 }
 .PeopleViennaBox__title--Topic {
   text-align: center;
@@ -252,15 +252,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 1vw;
 }
+.PeopleViennaBox__itemWrap--imgWrap {
+  align-items: center;
+}
 .PeopleViennaBox__text {
-  padding: 4vw 0;
+  padding: 2vw 0;
   text-align: start;
 }
 .PeopleViennaBox__imgPhoto {
-  width: 600px;
+  width: 100%;
 }
 .PeopleViennaBox__imgText {
   padding: 0 0 4vw 0;
@@ -270,33 +273,22 @@
   .PeopleViennaBox {
     padding: 8vw 6vw;
   }
-  .PeopleViennaBox__imgPhoto {
-    width: 300px;
-  }
-  .PeopleViennaBox__text {
-    text-align: center;
-  }
   .PeopleViennaBox__title {
     padding: 4vw 0;
-    text-align: center;
   }
 }
 @media screen and (max-width: 420px) {
   .PeopleViennaBox {
     padding: 8vw 12vw;
   }
-  .PeopleViennaBox__imgPhoto {
-    width: 280px;
-  }
 }
 .footerWrap {
   border-top: 1px solid #fff;
-  border-bottom: 1px solid black;
-  padding: 8vw;
+  padding: 2vw;
   display: flex;
   gap: 4vw;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .footerWrap__firstWrap {
   display: flex;
@@ -306,7 +298,7 @@
   display: none;
 }
 .footerWrap__titles {
-  font-size: 2vw;
+  font-size: 1.5vw;
   padding: 2vw 0;
 }
 .footerWrap__linkHelp {
@@ -314,23 +306,23 @@
   color: #000;
 }
 .footerWrap__imgMessage {
-  width: 60px;
-}
-.footerWrap__imgMessage--FacebookMessageImg {
   width: 40px;
 }
+.footerWrap__imgMessage--FacebookMessageImg {
+  width: 30px;
+}
 .footerWrap__imgMessage--InstagramMessageImg {
-  width: 50px;
+  width: 30px;
 }
 .footerWrap__sectionImg {
   display: flex;
   gap: 4vw;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
 }
 .footerWrap__HelpBlock {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 .footerWrap__messageLink {
   display: flex;
@@ -547,11 +539,14 @@
 }
 
 .video-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   text-align: center;
   padding: 8vw 0;
 }
 .video-block__video {
-  width: 100%;
+  width: 60%;
 }
 .video-block__text {
   padding: 1vw 6vw;
