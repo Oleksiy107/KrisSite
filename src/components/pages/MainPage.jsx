@@ -14,9 +14,9 @@ function MainPage() {
         <BurgerHeader />
         <Header />
         <VideoItem />
-        {/* <TopicElement /> */}
+
         <MainItem />
-        {/* <ReacomandadtionElement /> */}
+
         <FooterItem />
       </div>
     </>

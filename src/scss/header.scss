@@ -4,7 +4,7 @@ $colorHeader: #fff;
   flex-direction: column;
   gap: 2vw;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .header-block {
   &__texts {
@@ -16,7 +16,7 @@ $colorHeader: #fff;
   }
   &__titles {
     color: white;
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-family: $TextFont;
     font-weight: $FontWeightBold;
   }
@@ -25,8 +25,7 @@ $colorHeader: #fff;
   width: 10vw;
 }
 .header-block {
-  @include headerStyle();
-  padding: 2vw 0;
+  padding: 2vw 4vw;
   &__title {
     font-size: 2.5vw;
     font-family: $TextFont;
@@ -35,7 +34,6 @@ $colorHeader: #fff;
   &__inner-wrap {
     @include headerStyle();
     flex-direction: row;
-    gap: 6vw;
   }
   &__text {
     font-family: $TextFont;
@@ -58,7 +56,7 @@ $colorHeader: #fff;
   color: $colorHeader;
 }
 .header-block {
-  border-bottom: 0.2vw solid black;
+  border-bottom: 0.01vw solid #fff;
 }
 
 .img-block {
@@ -66,20 +64,7 @@ $colorHeader: #fff;
     width: 100px;
   }
 }
-@media screen and (max-width: 425px) {
-  .header-block {
-    padding: 1vw 3vw;
-    &__list {
-      gap: 3vw;
-      align-items: center;
-    }
-    &__texts {
-      font-size: 3vw;
-    }
-  }
-}
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .header-block {
     display: none;
   }
@@ -88,7 +73,7 @@ $colorHeader: #fff;
   display: none;
 }
 /* MobileContainer.css */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .mobile-container {
     display: block;
   }
@@ -99,6 +84,18 @@ $colorHeader: #fff;
 
   color: white;
   border-radius: 10px;
+}
+@media screen and (max-width: 425px) {
+  .header-block {
+    padding: 1vw 3vw;
+    &__list {
+      gap: 3vw;
+      align-items: center;
+    }
+    &__texts {
+      font-size: $MobileSizeForText;
+    }
+  }
 }
 
 .topnav {

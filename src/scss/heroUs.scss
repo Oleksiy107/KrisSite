@@ -1,0 +1,47 @@
+@mixin flexHero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.HeroWrap {
+  &__title {
+    font-size: 2vw;
+  }
+  padding: 8vw 4vw;
+  @include flexHero();
+  &__sectionAbout {
+    padding: 3vw 0;
+    gap: 2vw;
+    @include flexHero();
+  }
+  &__subText {
+    width: 50%;
+    text-align: center;
+  }
+  &__img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 689px) {
+  .HeroWrap {
+    &__title {
+      font-size: 4vw;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .HeroWrap__sectionAbout {
+    @include flexHero();
+    text-align: center;
+    margin-bottom: 30px; /* Adjust margin as needed */
+  }
+
+  .HeroWrap__img {
+    width: 100%; /* Make images responsive */
+    max-width: 300px; /* Limit image width if necessary */
+  }
+
+  .HeroWrap__subText {
+    margin-top: 15px; /* Add space between image and text */
+  }
+}

@@ -1,12 +1,13 @@
 $colorWhiteLink: #fff;
 .footerWrap {
   border-top: 1px solid $colorWhiteLink;
-  border-bottom: 1px solid black;
-  padding: 8vw;
+  background-color: #000;
+  padding: 2vw;
   display: flex;
+  padding: 2vw 4vw;
   gap: 4vw;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   &__firstWrap {
     display: flex;
 
@@ -19,7 +20,7 @@ $colorWhiteLink: #fff;
   }
 
   &__titles {
-    font-size: 2vw;
+    font-size: 1.2vw;
     padding: 2vw 0;
   }
   &__linkHelp {
@@ -31,24 +32,28 @@ $colorWhiteLink: #fff;
       width: 40px;
     }
     &--InstagramMessageImg {
-      width: 50px;
+      width: 30px;
     }
-    width: 60px;
+    width: 40px;
   }
   &__sectionImg {
     display: flex;
     gap: 4vw;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
   }
   &__HelpBlock {
     display: flex;
 
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   &__messageLink {
     display: flex;
     flex-direction: column;
+  }
+  &__linkHelp:hover {
+    width: 35%;
+    border-bottom: 1px solid #fff;
   }
 }
 @media screen and (max-width: 505px) {
@@ -60,10 +65,10 @@ $colorWhiteLink: #fff;
     gap: 6vw;
     &__titles {
       text-align: center;
-      font-size: 5vw;
+      font-size: $MobileSizeForText;
     }
     &__linkHelp {
-      font-size: 4.5vw;
+      font-size: $MobileSizeForText;
     }
     &__firstWrap {
       align-items: center;
@@ -82,10 +87,10 @@ $colorWhiteLink: #fff;
     }
     &__imgMessage {
       &--FacebookMessageImg {
-        width: 35px;
+        width: 40px;
       }
       &--InstagramMessageImg {
-        width: 45px;
+        width: 40px;
       }
       width: 50px;
     }

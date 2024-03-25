@@ -1,9 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
 $TextFont: "Playfair Display", serif;
 $TitleFont: "Playfair Display", serif;
 $FontWeightNormal: 400;
 $FontWeightBold: 600;
+$MobileSizeForText: 4vw;
 @import "./header.scss";
 @import "./mainPage.scss";
+@import "./heroUs.scss";
 @import "./viennaStyle.scss";
 @import "./foother.scss";
 @import "./aboutUs.scss";
@@ -11,13 +18,9 @@ $FontWeightBold: 600;
 @import "./recomendation.scss";
 @import "./topic.scss";
 @import "./videoBlock.scss";
+@import "./kids.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
 body {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%);
 }
@@ -25,9 +28,15 @@ body > header {
   color: white;
 }
 h2 {
+  font-family: $TitleFont;
+  color: white;
+}
+h3 {
+  font-family: $TitleFont;
   color: white;
 }
 p {
+  font-family: $TextFont;
   color: white;
 }
 a {
@@ -38,4 +47,26 @@ span {
 }
 .footerWrap__linkHelp {
   color: white;
+}
+.carousel-indicators .carousel-indicator {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+
+.carousel-indicators .carousel-indicator.active {
+  opacity: 1;
 }

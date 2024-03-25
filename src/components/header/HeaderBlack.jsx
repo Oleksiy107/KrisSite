@@ -17,11 +17,14 @@ function Header() {
           <Link to="/" className="header-block__page">
             <p className="header-block__texts">Головна</p>
           </Link>
-          <Link to="/Друга" className="header-block__page">
+          <Link to="/УкраїнціУВідні" className="header-block__page">
             <p className="header-block__texts">Українці у Відні</p>
           </Link>
-          <Link to="/Третя" className="header-block__page">
+          <Link to="/УкраїнськаМалеча" className="header-block__page">
             <p className="header-block__texts">Українська малеча</p>
+          </Link>
+          <Link to="/НашіГерої" className="header-block__page">
+            <p className="header-block__texts">Наші Герої</p>
           </Link>
           <Link to="/ПроНас" className="header-block__page">
             <p className="header-block__texts">Про нас</p>

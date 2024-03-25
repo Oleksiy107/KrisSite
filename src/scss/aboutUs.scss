@@ -71,11 +71,11 @@ $colorAll: #fff;
     }
     &__title {
       text-align: center;
-      font-size: 4vw;
+      font-size: $MobileSizeForText;
       color: $colorAll;
     }
     &__textFirst {
-      font-size: 4vw;
+      font-size: $MobileSizeForText;
       &--textAbout {
         width: 70%;
       }
