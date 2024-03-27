@@ -328,7 +328,23 @@
     font-size: 2.5vw;
   }
 }
+@media screen and (max-width: 700px) {
+  .NavigateToItemPage__itemList {
+    font-size: 3vw;
+  }
+}
 @media screen and (max-width: 600px) {
+  .HeroWrap__wrapHero {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .HeroWrap__img1 {
+    width: 35vw;
+    height: 40vw;
+  }
+  .HeroWrap__subText {
+    padding: 2vw 0;
+    font-size: 2.5vw;
+  }
   .SecondWrap__WrapToImg {
     gap: 2vw;
     padding: 4vw 8vw;
@@ -359,30 +375,34 @@
     flex-direction: column;
     align-items: center;
   }
+  .wrapAboutHero__img {
+    width: 40vw;
+    height: 40vw;
+  }
 }
-@media screen and (max-width: 555px) {
+@media screen and (max-width: 500px) {
   .NavigateToItemPage__itemList {
     font-size: 4vw;
   }
-  .SecondWrap__subText {
-    font-size: 3vw;
-  }
-  .SecondWrap .wrapAboutHero {
+  .wrapAboutHero {
     grid-template-columns: repeat(1, 1fr);
   }
-  .SecondWrap .wrapAboutHero__img {
+  .wrapAboutHero__img {
     width: 80%;
     height: 70vw;
   }
-  .SecondWrap .wrapAboutHero__subText {
+  .wrapAboutHero__subText {
     padding: 4vw 0;
     font-size: 3vw;
     width: 80%;
   }
-  .SecondWrap .wrapAboutHero__sectionImg {
+  .wrapAboutHero__sectionImg {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .SecondWrap__subText {
+    font-size: 3vw;
   }
 }
 .PeopleViennaBox {
